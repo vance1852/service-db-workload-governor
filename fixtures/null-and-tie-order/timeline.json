@@ -1,0 +1,28 @@
+[
+  {
+    "at": 1,
+    "action": "start",
+    "args": [
+      "one",
+      "month",
+      "close",
+      null,
+      20,
+      2
+    ]
+  },
+  {
+    "at": 2,
+    "action": "page",
+    "args": [
+      "one"
+    ]
+  },
+  {
+    "at": 3,
+    "action": "page",
+    "args": [
+      "one"
+    ]
+  }
+]

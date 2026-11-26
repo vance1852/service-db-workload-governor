@@ -1,0 +1,19 @@
+{
+  "case": "spill-pressure-and-snapshot-resume",
+  "files": {
+    "main": {
+      "sql": "main.sql",
+      "tables": {
+        "sale": 195,
+        "adjustment": 193,
+        "target_sql": 2
+      }
+    }
+  },
+  "event_count": 13,
+  "limits": {
+    "work_memory_bytes": 2400,
+    "temporary_bytes": 6800,
+    "desk_reserve_bytes": 400
+  }
+}

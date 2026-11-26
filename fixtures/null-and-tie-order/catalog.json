@@ -1,0 +1,19 @@
+{
+  "case": "null-and-tie-order",
+  "files": {
+    "main": {
+      "sql": "main.sql",
+      "tables": {
+        "sale": 3,
+        "adjustment": 2,
+        "target_sql": 1
+      }
+    }
+  },
+  "event_count": 3,
+  "limits": {
+    "work_memory_bytes": 800,
+    "temporary_bytes": 1600,
+    "desk_reserve_bytes": 100
+  }
+}

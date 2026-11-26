@@ -1,0 +1,122 @@
+[
+  {
+    "at": 1,
+    "action": "start",
+    "args": [
+      "big",
+      "month",
+      "close",
+      null,
+      30,
+      3
+    ]
+  },
+  {
+    "at": 2,
+    "action": "observed_expansion",
+    "args": [
+      "big",
+      "west",
+      "group-0"
+    ]
+  },
+  {
+    "at": 3,
+    "action": "start",
+    "args": [
+      "small",
+      "desk",
+      "desk",
+      "west",
+      12,
+      2
+    ]
+  },
+  {
+    "at": 4,
+    "action": "page",
+    "args": [
+      "small"
+    ]
+  },
+  {
+    "at": 5,
+    "action": "pause",
+    "args": [
+      "big"
+    ]
+  },
+  {
+    "at": 6,
+    "action": "commit",
+    "args": [
+      2,
+      "sale",
+      [
+        "s3",
+        "west",
+        "care",
+        6000,
+        "新提交"
+      ]
+    ]
+  },
+  {
+    "at": 7,
+    "action": "start",
+    "args": [
+      "other",
+      "month",
+      "close",
+      null,
+      10,
+      5
+    ]
+  },
+  {
+    "at": 8,
+    "action": "cancel",
+    "args": [
+      "other"
+    ]
+  },
+  {
+    "at": 9,
+    "action": "temporary_delete_pending",
+    "args": [
+      "other",
+      "segment-7",
+      850
+    ]
+  },
+  {
+    "at": 10,
+    "action": "restart",
+    "args": [
+      "worker"
+    ]
+  },
+  {
+    "at": 11,
+    "action": "resume",
+    "args": [
+      "small"
+    ]
+  },
+  {
+    "at": 12,
+    "action": "resume",
+    "args": [
+      "big"
+    ]
+  },
+  {
+    "at": 13,
+    "action": "temporary_delete_confirmed",
+    "args": [
+      "other",
+      "segment-7",
+      850
+    ]
+  }
+]

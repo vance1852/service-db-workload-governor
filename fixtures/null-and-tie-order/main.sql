@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE "adjustment" (ref TEXT PRIMARY KEY, sale_id TEXT, amount INTEGER);
+INSERT INTO "adjustment" VALUES('x','a',-20);
+INSERT INTO "adjustment" VALUES('y','b',-20);
+CREATE TABLE "sale" (sale_id TEXT PRIMARY KEY, store TEXT, family TEXT, amount INTEGER, incident TEXT);
+INSERT INTO "sale" VALUES('a','n','one',200,'同额');
+INSERT INTO "sale" VALUES('b','n','two',200,'同额');
+INSERT INTO "sale" VALUES('c','n','three',200,'待回执');
+CREATE TABLE "target_sql" (name TEXT PRIMARY KEY, sql TEXT);
+INSERT INTO "target_sql" VALUES('close','SELECT s.family,COUNT(*),SUM(a.amount) FROM sale s LEFT JOIN adjustment a ON s.sale_id=a.sale_id GROUP BY s.family ORDER BY SUM(a.amount),s.family');
+COMMIT;
